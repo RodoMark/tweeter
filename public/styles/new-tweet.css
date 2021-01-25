@@ -20,6 +20,10 @@
   width: 600px;
 }
 
+#tweet-text:focus {
+  outline: none;
+}
+
 #tweet-bottom {
   display: flex;
   justify-content: space-between;
