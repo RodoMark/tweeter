@@ -29,3 +29,10 @@ body {
 body {
   font-family: "Source San Pro", sans-serif;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+}
