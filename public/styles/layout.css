@@ -6,7 +6,9 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -23,3 +25,11 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+nav {
+  font-family: "Bungee", sans-serif !important;
+}
+
+body {
+  font-family: "Source San Pro", sans-serif;
+}
