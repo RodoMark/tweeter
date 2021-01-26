@@ -1,0 +1,23 @@
+article.tweet {
+  background-color: transparent;
+  background-image: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 4px groove #545149;
+  opacity: 86%;
+}
+
+article.tweet header {
+  display: flex;
+  justify-content: space-between;
+}
+
+article.tweet a {
+  padding: 0.5em 1em;
+}
+
+article:hover {
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  opacity: 100%;
+}
