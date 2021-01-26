@@ -30,6 +30,7 @@ article.tweet footer {
 
 article.tweet a {
   text-decoration: none;
+  display: none;
 }
 
 article:hover {
@@ -37,7 +38,6 @@ article:hover {
   opacity: 100%;
 }
 
-article:hover {
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
-  opacity: 100%;
+article:hover a {
+  display: initial;
 }
