@@ -1,0 +1,43 @@
+article.tweet {
+  margin-top: 1em;
+  background-color: transparent;
+  background-image: none;
+  display: flex;
+  flex-direction: column;
+  border: 4px groove #545149;
+  opacity: 86%;
+}
+
+article.tweet header {
+  display: flex;
+  background-image: none;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+article.tweet footer {
+  margin: auto auto;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  border: hidden;
+  border-top: groove;
+  border-top-width: 5px;
+  border-top-color: #545149;
+  resize: none;
+  width: 600px;
+}
+
+article.tweet a {
+  text-decoration: none;
+}
+
+article:hover {
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  opacity: 100%;
+}
+
+article:hover {
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  opacity: 100%;
+}

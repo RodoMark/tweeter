@@ -10,6 +10,7 @@
 }
 
 #tweet-text {
+  margin: auto auto;
   color: #545149;
   background: transparent;
   border: hidden;
@@ -27,4 +28,9 @@
 #tweet-bottom {
   display: flex;
   justify-content: space-between;
+}
+
+.red-text {
+  color: crimson;
+  font-family: "Bungee", sans-serif;
 }
