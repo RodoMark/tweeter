@@ -6,7 +6,7 @@ article.tweet {
   display: flex;
   flex-direction: column;
   border: 4px groove #545149;
-  opacity: 86%;
+  opacity: 77%;
 }
 
 article.tweet header {
@@ -16,8 +16,13 @@ article.tweet header {
   background-color: transparent;
 }
 
+article.tweet figure {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 article.tweet footer {
-  margin: auto auto;
   display: flex;
   justify-content: space-between;
   background: transparent;
@@ -29,8 +34,14 @@ article.tweet footer {
   width: 600px;
 }
 
+article.tweet .socials {
+  align-self: center;
+}
+
 article.tweet a {
+  align-self: center;
   text-decoration: none;
+  display: none;
 }
 
 article:hover {
@@ -38,7 +49,6 @@ article:hover {
   opacity: 100%;
 }
 
-article:hover {
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
-  opacity: 100%;
+article:hover a {
+  display: initial;
 }
