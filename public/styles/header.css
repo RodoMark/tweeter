@@ -2,7 +2,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin-top: 120px;
   background-color: #ce9c09;
   background-image: url("../images/billie-holiday.png");
 }
