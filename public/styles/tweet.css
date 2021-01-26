@@ -1,5 +1,6 @@
 article.tweet {
-  margin-top: 1em;
+  margin: 1em 0 0.5em 0;
+  padding: 1em 0.5em 0.5em 0.5em;
   background-color: transparent;
   background-image: none;
   display: flex;
@@ -30,7 +31,6 @@ article.tweet footer {
 
 article.tweet a {
   text-decoration: none;
-  display: none;
 }
 
 article:hover {
@@ -38,6 +38,7 @@ article:hover {
   opacity: 100%;
 }
 
-article:hover a {
-  display: initial;
+article:hover {
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  opacity: 100%;
 }
