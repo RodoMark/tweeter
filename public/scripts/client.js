@@ -52,7 +52,7 @@ $(document).ready(function () {
                 
                 <a href="">${tweetObj.user.handle}</a>
               </header>
-              <p>${tweetObj.content.text}</p>
+              <p></p>
               <footer>
                 <h6>Created ${getDaysBetween(
                   tweetObj.created_at,
@@ -69,6 +69,7 @@ $(document).ready(function () {
     `;
 
     let $tweet = $(article);
+    $tweet.find("p").text(tweetObj.content.text);
     return $tweet;
   };
 
