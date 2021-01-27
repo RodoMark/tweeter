@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 
-.btn {
+#tweet-button {
   background: #4056a1;
   color: white;
   font-family: "Bungee", sans-serif;

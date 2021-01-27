@@ -5,16 +5,23 @@
  */
 
 $(document).ready(function () {
-  $(function () {
-    const $button = $(". btn");
-    $button.on("click", function () {
-      console.log("Button clicked, performing ajax call...");
-      $.ajax("", { method: "GET" }).then(function (morePostsHtml) {
-        console.log("Success: ", morePostsHtml);
-        $button.replaceWith(morePostsHtml);
-      });
-    });
+  $(".btn").on("submit", function (e) {
+    e.preventDefault();
   });
+
+  const getDaysBetween = function (date1, date2) {
+    let oneDay = 1000 * 60 * 60 * 24;
+
+    // Convert both dates to milliseconds
+    let date1Miliseconds = date1;
+    let date2Miliseconds = date2;
+
+    // Calculate the difference in milliseconds
+    const timeDifference = date2Miliseconds - date1Miliseconds;
+
+    // Convert back to days and return
+    return Math.round(timeDifference / oneDay);
+  };
 
   const data = [
     {
@@ -55,7 +62,10 @@ $(document).ready(function () {
               </header>
               <p>${tweetObj.content.text}</p>
               <footer>
-                <h6>Created ${tweetObj.created_at} ago</h6>
+                <h6>Created ${getDaysBetween(
+                  new Date(),
+                  tweetObj.created_at
+                )} ago</h6>
                 <div class="socials">
                   <img src="public/images/flags.svg">
                   <img src="public/images/retweet.svg">
