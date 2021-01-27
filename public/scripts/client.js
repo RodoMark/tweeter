@@ -7,25 +7,23 @@
 $(document).ready(function () {
   $("#form").on("submit", function (event) {
     event.preventDefault();
+
     console.log("Button clicked, AJAX submitted");
     const $form = $(this);
     const $newTweet = $form.serialize();
-    const $tweetText = $("#tweet-text");
+    const $tweetText = $("#tweet-text").val();
+    //text=
 
-    if ($tweetText.val().length > 140) {
-      const $counter = this.find(".counter");
-      $counter.insterBefore;
-    } else if (
-      $tweetText.text() === null ||
-      $tweetText.text() === null ||
-      $tweetText.text() === " "
-    ) {
+    if ($tweetText.length > 140) {
+      prompt("Your text is too long!");
+    } else if ($tweetText === null || $tweetText === "") {
+      prompt("Sorry, you can't send empty text");
     } else {
       $.ajax({
         url: "http://localhost:8080/tweets",
         method: "POST",
         data: $newTweet,
-      });
+      }).then(loadTweets);
     }
   });
 
@@ -75,6 +73,8 @@ $(document).ready(function () {
   };
 
   const renderTweets = function (tweetObjects) {
+    $("#tweet-section").empty();
+
     tweetObjects.forEach(function (obj) {
       let $tweet = createTweetElement(obj);
       $("#tweet-section").append($tweet);
