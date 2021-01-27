@@ -8,22 +8,28 @@ $(document).ready(function () {
   $("#form").on("submit", function (event) {
     event.preventDefault();
 
-    console.log("Button clicked, AJAX submitted");
     const $form = $(this);
     const $newTweet = $form.serialize();
     const $tweetText = $("#tweet-text").val();
-    //text=
+    const $errorEl = $("#tweet-bottom").find("p");
 
     if ($tweetText.length > 140) {
-      prompt("Your text is too long!");
+      const errorMsg = "Your text is too long!";
+
+      $errorEl.append(errorMsg);
     } else if ($tweetText === null || $tweetText === "") {
-      prompt("Sorry, you can't send empty text");
+      const errorMsg = "Sorry, you can't send empty text";
+
+      $errorEl.append(errorMsg);
     } else {
+      console.log("AJAX submitting");
       $.ajax({
         url: "http://localhost:8080/tweets",
         method: "POST",
         data: $newTweet,
-      }).then(loadTweets);
+      })
+        .then(loadTweets)
+        .then($("#tweet-text").val(""));
     }
   });
 
@@ -69,6 +75,8 @@ $(document).ready(function () {
     `;
 
     let $tweet = $(article);
+
+    //Protect against cross site scripting
     $tweet.find("p").text(tweetObj.content.text);
     return $tweet;
   };
