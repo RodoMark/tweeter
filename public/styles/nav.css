@@ -1,4 +1,7 @@
 nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -11,4 +14,13 @@ nav {
 
 nav span {
   font-family: "Bungee", sans-serif;
+}
+
+nav button {
+  background-color: transparent;
+  border: none;
+}
+
+nav button:hover {
+  transform: scale(1.1);
 }
