@@ -13,15 +13,18 @@ $(document).ready(function () {
     const $tweetText = $("#tweet-text").val();
     const $errorEl = $("#tweet-bottom").find("p");
 
+    $errorEl.empty();
+
     if ($tweetText.length > 140) {
       const errorMsg = "Your text is too long!";
 
-      $errorEl.append(errorMsg);
+      $errorEl.text(errorMsg).slideDown(400);
     } else if ($tweetText === null || $tweetText === "") {
       const errorMsg = "Sorry, you can't send empty text";
 
-      $errorEl.append(errorMsg);
+      $errorEl.text(errorMsg).slideDown(400);
     } else {
+      $errorEl.empty();
       console.log("AJAX submitting");
       $.ajax({
         url: "http://localhost:8080/tweets",
