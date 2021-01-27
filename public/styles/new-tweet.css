@@ -3,6 +3,12 @@
   flex-direction: column;
 }
 
+.new-tweet p {
+  margin-bottom: 0.5em;
+  border: solid 3px #d00;
+  display: none;
+}
+
 #tweet-button {
   background: #4056a1;
   color: white;
@@ -33,11 +39,4 @@
 .red-text {
   color: crimson;
   font-family: "Bungee", sans-serif;
-}
-
-#tweet-bottom p {
-  margin: 0;
-  background: #d99891;
-  color: crimson;
-  display: none;
 }

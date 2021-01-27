@@ -11,7 +11,7 @@ $(document).ready(function () {
     const $form = $(this);
     const $newTweet = $form.serialize();
     const $tweetText = $("#tweet-text").val();
-    const $errorEl = $("#tweet-bottom").find("p");
+    const $errorEl = $(".new-tweet").find("p");
 
     $errorEl.empty();
 
