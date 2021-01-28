@@ -1,4 +1,5 @@
 #scrolltop i {
+  z-index: 2;
   background: crimson;
   padding: 1em 1.23em;
   border-radius: 50%;
