@@ -4,7 +4,7 @@
   border-radius: 50%;
   color: white;
   position: fixed;
-  right: 20%;
+  right: calc(50% - 7vw);
   bottom: 5%;
   animation-duration: 1.6s;
   animation-iteration-count: infinite;
