@@ -1,7 +1,4 @@
 $(document).ready(function () {
-  // --- our code goes here ---
-  console.log("Character counter: Ready");
-
   $("#tweet-text").on("input", function (event) {
     const $newTweet = $(event.target).closest("section");
     const $tweetText = $newTweet.find("#tweet-text");

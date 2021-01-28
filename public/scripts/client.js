@@ -26,7 +26,6 @@ $(document).ready(function () {
     } else {
       $errorEl.addClass("hidden");
       $errorEl.empty();
-      console.log("AJAX submitting");
       $.ajax({
         url: "http://localhost:8080/tweets",
         method: "POST",
