@@ -3,7 +3,16 @@ $(document).ready(function () {
 
   $("#slider-button").click(function (event) {
     event.preventDefault();
+    const $newTweet = $(".new-tweet");
+    console.log("slider pressed");
 
-    console.log("Button clicked");
+    if ($newTweet.hasClass("up")) {
+      $newTweet.slideDown(400);
+      $newTweet.removeClass("hidden");
+      $newTweet.removeClass("up");
+    } else {
+      $newTweet.slideUp(400);
+      $newTweet.addClass("up");
+    }
   });
 });
