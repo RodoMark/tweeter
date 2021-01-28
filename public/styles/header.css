@@ -11,5 +11,9 @@ header.profile {
   height: calc(40vw + 10vw / var(--size-divisor));
 }
 
-header.profile p {
+@media (max-width: 768px) {
+  header.profile {
+    width: 100vw;
+    height: auto;
+  }
 }
