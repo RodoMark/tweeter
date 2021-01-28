@@ -2,14 +2,12 @@ $(document).ready(function () {
   console.log("Scrolltop: Ready");
 
   const $scrolltop = $("#scrolltop");
-
-  $scrolltop.hide(); // hide on page load
+  $scrolltop.hide();
 
   $(window).bind("scroll", function () {
-    if ($(this).scrollTop() > 200) {
-      // show after 200 px of user scrolling
+    if ($(this).scrollTop() > 215) {
       $scrolltop.slideDown("fast");
-    } else if ($(this).scrollTop() <= 200) {
+    } else if ($(this).scrollTop() <= 215) {
       $scrolltop.hide();
     }
   });
@@ -17,6 +15,6 @@ $(document).ready(function () {
   $scrolltop.click(function (event) {
     event.preventDefault();
 
-    $("html, body").animate({ scrollTop: "0px" }, 300);
+    $("html, body").animate({ scrollTop: "0px" }, 550);
   });
 });
