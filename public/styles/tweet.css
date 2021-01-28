@@ -9,6 +9,12 @@ article.tweet {
   opacity: 77%;
 }
 
+@media(max-width: 768px) {
+  article.tweet {
+    width: calc(60vw + var(10vh / --size-divisor)
+  }
+}
+
 article.tweet header {
   display: flex;
   background-image: none;
