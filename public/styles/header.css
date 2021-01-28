@@ -7,8 +7,8 @@ header.profile {
   background-image: url("../images/billie-holiday.png");
   color: white;
   text-align: center;
-  width: calc(40vw + 10vw / var(--size-divisor));
-  height: calc(40vw + 10vw / var(--size-divisor));
+  width: calc(20vw + 40vh / var(--size-divisor));
+  height: calc(20vw + 40vh / var(--size-divisor));
 }
 
 @media (max-width: 768px) {
