@@ -1,5 +1,12 @@
 .new-tweet {
   flex-direction: column;
+  margin-left: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .new-tweet {
+    align-self: center;
+  }
 }
 
 .new-tweet p {

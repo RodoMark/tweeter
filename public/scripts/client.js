@@ -36,20 +36,6 @@ $(document).ready(function () {
     }
   });
 
-  const getDaysBetween = function (date1, date2) {
-    let oneDay = 1000 * 60 * 60 * 24;
-
-    // Convert both dates to milliseconds
-    let date1Miliseconds = date1;
-    let date2Miliseconds = date2;
-
-    // Calculate the difference in milliseconds
-    const timeDifference = date2Miliseconds - date1Miliseconds;
-
-    // Convert back to days and return
-    return Math.round(timeDifference / oneDay);
-  };
-
   const createTweetElement = function (tweetObj) {
     const article = `
     <article class="tweet">
@@ -63,10 +49,7 @@ $(document).ready(function () {
               </header>
               <p></p>
               <footer>
-                <h6>Created ${getDaysBetween(
-                  tweetObj.created_at,
-                  new Date()
-                )} ago</h6>
+                <h6>Created <time class="timeago" datetime="${tweetObj.created_at.toISOString()}">${tweetObj.created_at.toISOString()}</time> ago</h6>
                 <div class="socials">
                   <i class="fas fa-flag"></i>
                   <i class="fas fa-retweet"></i>
@@ -92,6 +75,8 @@ $(document).ready(function () {
       $("#tweet-section").append($tweet);
     });
   };
+
+  jQuery("time.timeago").timeago();
 
   const loadTweets = function () {
     $.ajax({

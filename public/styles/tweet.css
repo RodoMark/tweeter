@@ -9,7 +9,7 @@ article.tweet {
   opacity: 77%;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   article {
     width: calc(90vw + 10vh / var(--size-divisor));
   }

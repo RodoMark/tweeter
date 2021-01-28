@@ -40,7 +40,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 90%;
-  align-items: center;
+  align-items: flex-start;
 }
 
 figure {
@@ -51,11 +51,14 @@ figure {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 10%;
+  }
+
+  main {
+    width: 100vw;
   }
 }
