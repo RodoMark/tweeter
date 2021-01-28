@@ -29,4 +29,5 @@ header.profile p {
 
 header.profile img {
   padding-top: 0.5em;
+  max-height: 250px;
 }

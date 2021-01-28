@@ -6,10 +6,9 @@ $(document).ready(function () {
 
     const $newTweet = $(".new-tweet");
     const $tweetText = $("#tweet-text");
-    const $toTheTop = $("html, body").animate({ scrollTop: "0px" }, 550);
 
     if ($(this).scrollTop() > 215) {
-      $toTheTop;
+      $("html, body").animate({ scrollTop: "0px" }, 550);
     }
 
     if ($newTweet.hasClass("up")) {
@@ -22,5 +21,23 @@ $(document).ready(function () {
       $newTweet.addClass("up");
       $tweetText.blur();
     }
+  });
+
+  const $scrolltop = $("#scrolltop");
+  $scrolltop.hide();
+
+  $(window).bind("scroll", function () {
+    if ($(this).scrollTop() > 215) {
+      $scrolltop.slideDown("fast");
+    } else if ($(this).scrollTop() <= 215) {
+      $scrolltop.hide();
+    }
+  });
+
+  $("#scrolltop").click(function (event) {
+    event.preventDefault();
+
+    $("html, body").animate({ scrollTop: "0px" }, 550);
+    $tweetText.focus();
   });
 });
