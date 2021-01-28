@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // This button slides the new tweet composition form in and out
   $("#slider-button").click(function (event) {
     event.preventDefault();
 
@@ -21,6 +22,7 @@ $(document).ready(function () {
     }
   });
 
+  // After scrolling down a button appears to allow the user to scroll back up
   const $scrolltop = $("#scrolltop");
   $scrolltop.hide();
 
