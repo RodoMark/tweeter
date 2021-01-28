@@ -31,8 +31,6 @@ nav div {
 
 nav button {
   background-color: transparent;
-  border: none;
-  outline: none;
 }
 
 nav button p {
@@ -46,10 +44,10 @@ nav .fas {
   color: crimson;
   animation-duration: 1.6s;
   animation-iteration-count: infinite;
-  animation-name: bounce;
+  animation-name: bounce-down;
   animation-timing-function: ease;
 }
-@keyframes bounce {
+@keyframes bounce-down {
   0% {
     transform: translateY(0);
   }

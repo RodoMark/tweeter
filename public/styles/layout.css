@@ -43,6 +43,11 @@ main {
   align-items: flex-start;
 }
 
+button {
+  border: none;
+  outline: none;
+}
+
 figure {
   margin: 0;
 }

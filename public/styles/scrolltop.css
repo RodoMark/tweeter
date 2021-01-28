@@ -1,8 +1,24 @@
 #scrolltop i {
   background: crimson;
-  padding: 1em;
+  padding: 1em 1.23em;
+  border-radius: 50%;
   color: white;
   position: fixed;
   right: 20%;
   bottom: 5%;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-name: bounce-down;
+  animation-timing-function: ease;
+}
+@keyframes bounce-up {
+  0% {
+    transform: translateY(0.22em);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0.22em);
+  }
 }
