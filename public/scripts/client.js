@@ -37,6 +37,8 @@ $(document).ready(function () {
   });
 
   const createTweetElement = function (tweetObj) {
+    const creationDate = new Date(tweetObj.created_at).toISOString();
+
     const article = `
     <article class="tweet">
     <header>
@@ -49,7 +51,7 @@ $(document).ready(function () {
               </header>
               <p></p>
               <footer>
-                <h6>Created <time class="timeago" datetime="${tweetObj.created_at.toISOString()}">${tweetObj.created_at.toISOString()}</time> ago</h6>
+                <h6>Created <time class="timeago" datetime="${creationDate}"></time></h6>
                 <div class="socials">
                   <i class="fas fa-flag"></i>
                   <i class="fas fa-retweet"></i>
@@ -73,10 +75,9 @@ $(document).ready(function () {
     tweetObjects.forEach(function (obj) {
       let $tweet = createTweetElement(obj);
       $("#tweet-section").append($tweet);
+      $("time.timeago").timeago();
     });
   };
-
-  jQuery("time.timeago").timeago();
 
   const loadTweets = function () {
     $.ajax({
