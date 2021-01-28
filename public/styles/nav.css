@@ -12,6 +12,13 @@ nav {
   padding: 1.5em;
 }
 
+@media (max-width: 768px) {
+  nav {
+    background: #ce9c09;
+    background-image: url("../images/billie-holiday.png");
+  }
+}
+
 nav span {
   font-family: "Bungee", sans-serif;
 }
@@ -32,6 +39,7 @@ nav button p {
   margin: 5px;
 }
 
+/* ANIMATION */
 nav .fas {
   margin-top: 0.2em;
   color: crimson;
