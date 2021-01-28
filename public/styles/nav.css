@@ -16,11 +16,46 @@ nav span {
   font-family: "Bungee", sans-serif;
 }
 
+nav div {
+  display: flex;
+  flex-direction: column;
+}
+
 nav button {
   background-color: transparent;
   border: none;
+  outline: none;
+}
+
+nav button p {
+  color: white;
+  margin: 5px;
+}
+
+nav .fas {
+  margin-top: 0.2em;
+  color: crimson;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.22em);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 nav button:hover {
   transform: scale(1.1);
+}
+
+nav button:hover p {
+  font-weight: bolder;
 }
