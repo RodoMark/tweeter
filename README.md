@@ -27,4 +27,9 @@ This repository is the starter code for the project: Students will fork and clon
 * Messages update dynamically to show you how long ago they've been posted.
 * Scroll down and a button will appear on the bottom. Click on the button and the screen will scroll to the top.
 
+## Screenshots
 
+!["Error message when over the character limit of 140"](https://github.com/RodoMark/tweeter/blob/main/docs/character-limit.png?raw=true)
+!["Screenshot of the new Tweet form being hiddden"](https://github.com/RodoMark/tweeter/blob/main/docs/form-hidden.png?raw=true)
+!["Layout automatically adjusts depending on viewport size"](https://github.com/RodoMark/tweeter/blob/main/docs/mobile-view.png?raw=true)
+!["Button at the bottom that scrolls you to the top when pressed"](https://github.com/RodoMark/tweeter/blob/main/docs/scolltop.png?raw=true)
