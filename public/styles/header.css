@@ -9,8 +9,9 @@ header.profile {
   background-image: url("../images/billie-holiday.png");
   color: white;
   text-align: center;
-  width: calc(20vw + 200px / var(--size-divisor));
-  height: calc(20vw + 200px / var(--size-divisor));
+  width: calc(30vw + 200px / var(--size-divisor));
+  height: calc(30vw + 200px / var(--size-divisor));
+  max-height: 586px;
 }
 
 @media only screen and (max-width: 768px) {
