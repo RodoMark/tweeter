@@ -1,6 +1,6 @@
 article.tweet {
   margin: 1em 0 0.5em 1em;
-  padding: 1em 0.5em 0.5em 0.5em;
+  padding: 1em 2em 0.5em 2em;
   background-color: transparent;
   background-image: none;
   display: flex;
@@ -36,7 +36,7 @@ article.tweet footer {
   border-top: groove;
   border-top-width: 5px;
   border-top-color: #545149;
-  width: 600px;
+  width: 100%;
 }
 
 article.tweet .socials {
@@ -49,11 +49,19 @@ article.tweet a {
   display: none;
 }
 
+article.tweet i {
+  display: none;
+}
+
 article:hover {
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
   opacity: 100%;
 }
 
 article:hover a {
+  display: initial;
+}
+
+article:hover i {
   display: initial;
 }
