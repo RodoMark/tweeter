@@ -62,7 +62,7 @@
       <section class="new-tweet hidden up">
         <h2>Compose Tweet</h2>
         <form id="form" method="POST" action="/tweets">
-          <p></p>
+          <p class="hidden"></p>
           <label for="tweet-text"></label>
           <textarea
             name="text"
@@ -79,11 +79,11 @@
       <section id="tweet-section"></section>
     </main>
 
+    <!-- Scripts that provide tweet composing functionality go here -->
     <script
       type="text/javascript"
       src="/scripts/composer-char-counter.js"
     ></script>
     <script type="text/javascript" src="/scripts/new-tweet-slider.js"></script>
-    <script type="text/javascript" src="/scripts/timeAgo.js"></script>
   </body>
 </html>
