@@ -5,6 +5,7 @@
  */
 
 $(document).ready(function () {
+  // New tweet form submission
   $("#form").on("submit", function (event) {
     event.preventDefault();
 
