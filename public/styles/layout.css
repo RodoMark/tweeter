@@ -3,6 +3,10 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+:root {
+  --size-divisor: 2;
+}
+
 html {
   box-sizing: border-box;
 }

@@ -1,7 +1,15 @@
 header.profile {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #ce9c09;
   background-image: url("../images/billie-holiday.png");
+  color: white;
+  text-align: center;
+  width: calc(40vw + 10vw / var(--size-divisor));
+  height: calc(40vw + 10vw / var(--size-divisor));
+}
+
+header.profile p {
 }
