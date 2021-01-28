@@ -4,17 +4,18 @@ $(document).ready(function () {
   $("#slider-button").click(function (event) {
     event.preventDefault();
     const $newTweet = $(".new-tweet");
+    const $tweetText = $("#tweet-text");
     console.log("slider pressed");
 
     if ($newTweet.hasClass("up")) {
       $newTweet.slideDown(400);
       $newTweet.removeClass("hidden");
       $newTweet.removeClass("up");
-      $newTweet.focus();
+      $tweetText.focus();
     } else {
       $newTweet.slideUp(400);
       $newTweet.addClass("up");
-      $newTweet.trigger("blur");
+      $tweetText.blur();
     }
   });
 });
