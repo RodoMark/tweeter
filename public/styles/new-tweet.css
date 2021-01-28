@@ -1,5 +1,5 @@
 .new-tweet {
-  display: hidden;
+  display: none;
   flex-direction: column;
 }
 
