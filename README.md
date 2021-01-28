@@ -15,3 +15,16 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Features
+
+* Automatically resizes depending on viewport size.
+* Click on "Write a new tweet" and the Tweet composer will appear!
+* Type a message and click "TWEET" to type a message and it the list will update right away!
+* If your text is over 140 characters long or if it's empty, the form will validate and you'll receive an appropriate error message.
+* Protection against cross-site scripting (XSS)
+* Click "Write a new tweet" when the tweet composer is out and it'll go away!
+* Messages update dynamically to show you how long ago they've been posted.
+* Scroll down and a button will appear on the bottom. Click on the button and the screen will scroll to the top.
+
+
