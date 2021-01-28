@@ -10,9 +10,11 @@ $(document).ready(function () {
       $newTweet.slideDown(400);
       $newTweet.removeClass("hidden");
       $newTweet.removeClass("up");
+      $newTweet.focus();
     } else {
       $newTweet.slideUp(400);
       $newTweet.addClass("up");
+      $newTweet.trigger("blur");
     }
   });
 });
