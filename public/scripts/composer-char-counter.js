@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // Counts the number of characters in new tweet field  
   $("#tweet-text").on("input", function (event) {
     const $newTweet = $(event.target).closest("section");
     const $tweetText = $newTweet.find("#tweet-text");
