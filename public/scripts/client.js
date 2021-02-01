@@ -34,7 +34,7 @@ $(document).ready(function () {
       })
         .then(loadTweets)
         .then($("#tweet-text").val(""))
-        .then($("#tweet-text").blur());
+        .then($('.counter').val(140))
     }
   });
 
